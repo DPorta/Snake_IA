@@ -115,7 +115,7 @@ class GeneticPlayer:
 
         top_25_indexes=list(np.argsort(scores))[3*(self.pop_size//4):self.pop_size]
         print("Puntaje: ",scores)
-
+        print("ID de mejores 25 snakes: ",top_25_indexes)
         top_25=[self.pop[i]for i in top_25_indexes][::-1]
         self.pop=self.reproduce(top_25)
 
