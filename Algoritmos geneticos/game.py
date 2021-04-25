@@ -117,7 +117,7 @@ class Game:
             if display:
                 if self.gui is not None:
                     self.gui.update()
-                time.sleep(1)
+                time.sleep(0.75)
 
     def displayBoard(self):
         for i in range (self.size):

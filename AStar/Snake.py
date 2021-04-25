@@ -4,7 +4,7 @@ import random
 import sys
 import time
 
-windows_size=400
+windows_size=500
 
 class Node():
     def __init__(self, pariente=None, posicion=None):
@@ -114,7 +114,7 @@ class Snake():
         x = self.position[0]
         y = self.position[1]
         #limites del mapa -10 para prevenir colisiones
-        if x > windows_size - 10 and x < 0:
+        if x > windows_size - 10 or x < 0:
             return 1
         elif y > windows_size - 10 or y < 0:
             return 1
@@ -270,7 +270,7 @@ def main():
         pygame.draw.rect(window, pygame.Color(200, 0, 0),
                          pygame.Rect(comida_pos[0], comida_pos[1], 10, 10))
         # IA
-        if (snake.Colision() == 1):
+        if (snake.Colision() == 1 ):#AGREGAR or score2==3 para poner fin al juego si el player llega a x puntos
             MAPA.gameOver(score, score2)
         # Humano
         if (snake2.Colision() == 1):

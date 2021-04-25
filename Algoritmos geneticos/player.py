@@ -107,7 +107,7 @@ class GeneticPlayer:
 
                 if score>max_score:
                     max_score=score
-                    print(max_score," puntos en el ID de snake", i)
+                    #print(max_score," puntos en el ID de snake", i)
                     best_id_snake=i
                     best_score_snake=max_score
                     best_snake=self.current_brain
@@ -128,7 +128,7 @@ class GeneticPlayer:
             best_id_snake,best_score_snake,best_snake=self.one_generation()
             #datos para ver al mejor snake de cada generacion
             print("Mejor snake id: ",best_id_snake)
-            print("Mejor snake score: ", best_score_snake)
+            #print("Mejor snake score: ", best_score_snake)
 
         print("**************************************************************")
 
