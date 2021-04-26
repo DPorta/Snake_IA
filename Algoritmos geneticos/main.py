@@ -10,7 +10,7 @@ guiSize=800
 #Tamaño de poblacion
 pop_size=100
 #Cantidad de generaciones
-num_generations=50
+num_generations=100
 num_trails=1
 windows_size=7
 hidden_size=15
